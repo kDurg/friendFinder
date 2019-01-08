@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <h1>Survey Questions</h1>
+    <hr>
+    <h2>About You:</h2>
+    <h5>Your Name:</h5>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputBoxName">Name:</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+
+    <h5>URL Link To Your Photo (required):</h5>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputBoxPhotoURL">URL: </span>
+        </div>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <hr>
+    <div class="questions">
+        <div id="question1">
+            <h3>Question 1</h3>
+            <h4>You're the type of person that would eat excessive amounts of garlic, just in case there are actually
+                Vampires.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question2">
+            <h3>Question 2</h3>
+            <h4>You believe walks on the beach should be more of a means of torture rather than a hobby on a dating
+                site.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question3">
+            <h3>Question 3</h3>
+            <h4>You tend to playfully insult your friends more than you compliment them.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question4">
+            <h3>Question 4</h3>
+            <h4>You beleive that gluten is the primary ingredient for souls.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question5">
+            <h3>Question 5</h3>
+            <h4>You beleive baseball is slightly more engaging to watch than golf.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+        <div id="question6">
+            <h3>Question 6</h3>
+            <h4>You wish you lived in the Medeival times to avoid shaving.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question7">
+            <h3>Question 7</h3>
+            <h4>You're the type of person who would put fake poop on your bosses' keyboard without thinking of
+                consiquences as long as you heard their response.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question8">
+            <h3>Question 8</h3>
+            <h4>You beleive that Cheetos look like deliously-cheesy, muscular, worms.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question9">
+            <h3>Question 9</h3>
+            <h4>You're first reaction to seeing kids play basketball on the playground, is to reject the ball back to
+                the nearest victim's chest, even when you weren't playing with them.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="question10">
+            <h3>Question 10</h3>
+            <h4>You're the type of person that would yell out "I'm bleeding" at a theme park as a way to cut through
+                the roller coaster lines faster.</h4>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">5- Strongly Agree</button>
+                    <button class="dropdown-item" type="button">4 - Somewhat Agree</button>
+                    <button class="dropdown-item" type="button">3 - Undecided</button>
+                    <button class="dropdown-item" type="button">2 - Somewhat Disagree</button>
+                    <button class="dropdown-item" type="button">1 - Strongly Disagree</button>
+                </div>
+            </div>
+        </div>
+
+        <a class="btn btn-primary btn-lg" id="submitButton" href="#" role="button">Submit: Find My New Bestie!</a>
+
+    </div>
+    <!-- ------------------------------------------------------------------------------- -->
+
+    <div id="bestFriendModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Your New Bestest Friend</h1>
+                </div>
+                <div class="modal-body">
+                    <h2 id="bestFriend"></h2>
+                    <img id="bestFriendPhoto" src="#">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#submitButton").on("click", function (event) {
+            event.preventDefault();
+            // Form validation
+            var valid = true;
+            if ($("#name").val() === "" || $("#photo").val() === "") {
+                valid = false;
+            } else if ($("#question1").val() === "empty" ||
+                $("#question2").val() === "empty" ||
+                $("#question3").val() === "empty" ||
+                $("#question4").val() === "empty" ||
+                $("#question5").val() === "empty" ||
+                $("#question6").val() === "empty" ||
+                $("#question7").val() === "empty" ||
+                $("#question8").val() === "empty" ||
+                $("#question9").val() === "empty" ||
+                $("#question10").val() === "empty") {
+                valid = false;
+            } if (valid === true) {
+                var newUser = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        $("#question1").val(),
+                        $("#question2").val(),
+                        $("#question3").val(),
+                        $("#question4").val(),
+                        $("#question5").val(),
+                        $("#question6").val(),
+                        $("#question7").val(),
+                        $("#question8").val(),
+                        $("#question9").val(),
+                        $("#question10").val()
+                    ]
+                };
+                var currentURL = window.location.origin;
+                $.post(currentURL + "/api/friends", newUser, function (data) {
+                    $("#bestFriend").text(data.name);
+                    $("#bestFriendPhoto").attr("src", data.photo);
+                    $("#bestFriendModal").modal("toggle");
+                });
+            } else {
+                alert("You haven't finished your survey!");
+            }
+        });
+    </script>
+</body>
+
+</html>
